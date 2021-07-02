@@ -3,7 +3,7 @@ import React, { setState, useState } from 'react'
 const api = {
   key: "50e1296e3896b8263fa592aaabec1a87",
   base: "http://api.openweathermap.org/data/2.5/",
-  icon: "http://openweathermap.org/img/wn/"
+  icon: "https://openweathermap.org/img/wn/"
 }
 
 function App() {
