@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'montseratt', sans-serif;
+}
+
+.app{
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .app {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+/* @media (max-width: 768px) {
+  
+  }
+} */
+
+.app.cold{
+  background: url("https://aquahacking.com/wp-content/uploads/2019/02/water-background-1800x1013.jpg"), #111111;
+  background-size: cover;
+}
+
+.app.warm{
+  background: url("https://media.npr.org/assets/img/2018/08/13/gettyimages-736054223-0c39bf5f7e611768136a230f81a6eefa0a3e511d.jpg"), #111111;
+  background-size: cover;
+}
+
+main{
+  min-height: 100%;
+  /* background-color: aqua; */
+}
+.search-box{
+  padding: 25px 0  0 25px;
+  width: 100%;
+  
+}
+.search-bar{
+  display: block;
+  padding: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: larger;
+  background-color:  rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  color: black;
+
+  transition: .4s ease;
+}
+.search-bar:focus{
+  background-color: rgba(255, 255, 255, 0.7);;
+}
+
+.location-box, .weather-box{
+  color: white;
+  margin: 25px;
+  font-size: larger;
+}
+
+.location{
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(119, 119, 119, 0.7);
+  text-align: center;
+}
+
+.date{
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(119, 119, 119, 0.7);
+  text-align: center;
+}
+
+.temp{
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 5px 6px rgba(109, 109, 109, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  width: fit-content;
+  padding: 20px 35px;
+}
+
+.weather{
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 350px;
+  text-align: center;
+}
+.weather-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon > img{
+  width: 200px;
+}
