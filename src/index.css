@@ -45,6 +45,15 @@ body{
   background-size: cover;
 }
 
+.app.hot{
+  background: url("https://static.vecteezy.com/system/resources/previews/000/831/974/large_2x/fire-background-photo.jpg"), #111111;
+  background-size: cover;
+}
+.app.snowy{
+  background: url("https://www.publicdomainpictures.net/pictures/250000/velka/snow-background-1518252097LRO.jpg"), #111111;
+  background-size: cover;
+}
+
 main{
   min-height: 100%;
 }
