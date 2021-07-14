@@ -14,7 +14,7 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&appid=${api.key}`)
+      fetch(`${api.base}weather?q=${query}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
         .then(res => res.json())
         .then(result => {
           setWeather(result);
