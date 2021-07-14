@@ -14,7 +14,6 @@ body{
   background-size: cover;
   color: #eee;
   height: 100vh;
-  /* min-width: 360px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -46,7 +45,7 @@ body{
 }
 
 .app.hot{
-  background: url("https://static.vecteezy.com/system/resources/previews/000/831/974/large_2x/fire-background-photo.jpg"), #111111;
+  background: url("https://gallery.yopriceville.com/var/albums/Backgrounds/Fire_Background.jpg?m=1431995365"), #111111;
   background-size: cover;
 }
 .app.snowy{
@@ -56,11 +55,17 @@ body{
 
 main{
   min-height: 100%;
+
 }
 .search-box{
+  align-self: center;
   padding: 100px 10px 0px 10px;
-  width: 100%
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .search-bar{
   display: block;
   padding: 15px;
@@ -68,12 +73,11 @@ main{
   border: none;
   outline: none;
   font-size: larger;
-  background-color:  rgba(255, 255, 255, 0.3);
+  background-color:  rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  width: 100%;
   color: black;
-
   transition: .4s ease;
+  width: 340px;
 }
 .search-bar:focus{
   background-color: rgba(255, 255, 255, 0.7);;
@@ -127,16 +131,18 @@ main{
 }
 
 @media (max-width: 425px) {
+
   .search-box{
     padding: 20px 10px 0px 10px;
     margin-top: 60px;
-    /* background-color: aqua; */
+    width: 250px;
   }
   .search-bar{
     display: block;
     padding:10px;
     font-size: small;
   }
+
   .temp{
     font-size: 50px;
   text-shadow: 2px 2px rgba(109, 109, 109, 0.7);
