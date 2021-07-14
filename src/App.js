@@ -1,7 +1,7 @@
-import React, { setState, useState } from 'react'
+import React, { useState } from 'react'
 
 const api = {
-  key: "50e1296e3896b8263fa592aaabec1a87",
+  key: process.env.REACT_APP_WEATHER_API_KEY,
   base: "https://api.openweathermap.org/data/2.5/",
   icon: "http://openweathermap.org/img/wn/"
 }
@@ -10,7 +10,7 @@ function App() {
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({})
-  let iconweather = '';
+  // let iconweather = '';
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -62,7 +62,7 @@ function App() {
               <div className="weather">{weather.weather[0].main}</div>
             </div>
             <div className='weather-icon'>
-              <img src={(typeof weather.main != 'undefined') ? `${api.icon}${weather.weather[0].icon}@4x.png` :''} />
+              <img alt='' src={(typeof weather.main != 'undefined') ? `${api.icon}${weather.weather[0].icon}@4x.png` :''} />
             </div>
           </div>
         ) : ('')}
